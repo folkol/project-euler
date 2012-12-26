@@ -1,0 +1,15 @@
+import java.math.BigInteger;
+import java.util.*;
+
+public class LargestPrimeFactor {
+    public static void main(String[] args) {
+        BigInteger n = new BigInteger(args[0]);
+        // Someone said that the highest prime factor of this number can
+        // not exceed sqrt(n). WHY (Unless this number is a prime...)
+        //        List<Integer> factorization = Prime.factorize((int)Math.sqrt(n.doubleValue()));
+        List<Integer> factorization = Prime.factorize(n.intValue());
+        
+        System.out.println(factorization);
+        System.out.println("Largest factor: " + factorization.get(factorization.size() - 1));
+    }
+}

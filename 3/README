@@ -1,0 +1,4 @@
+One factor will be equal to or less than sqrt of n, since they come in pairs.
+Use long for n, since it is too big to fit into 31bit int.
+
+* Find a prime factor which is smaller than sqrt(n), use it to start the factoring loop.
